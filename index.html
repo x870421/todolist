@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TODO LIST</h1>
+      <div class="card input">
+        <input type="text" placeholder="請輸入待辦事項" />
+        <a href="#" class="btn_add">+</a>
+      </div>
+      <div class="card card_list">
+        <ul class="tab">
+          <li class="active" data-state="all">全部</li>
+          <li data-state="todo">待完成</li>
+          <li data-state="done">已完成</li>
+        </ul>
+        <div class="cart_content">
+          <ul class="list">
+            <!-- <li data-index={index} data-id={value.id}>
+              <label class="checkbox" for="">
+                <input type="checkbox" />
+                <span>${value.content}</span>
+              </label>
+              <a href="#" class="delete" data-index={index}></a>
+            </li> -->
+          </ul>
+          <div class="list_footer">
+            <p><span class="todoNum">0</span> 個待完成項目</p>
+            <a href="#" class="delebtn">清除已完成項目</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
